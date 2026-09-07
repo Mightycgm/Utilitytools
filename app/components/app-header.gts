@@ -99,12 +99,7 @@ export default class AppHeader extends Component {
 				</span>
 			{{else}}
 				<span class="dt-header-title">
-					<img
-						src="/delphi.png"
-						alt=""
-						class="dt-header-icon"
-					/>
-					<h1>delphitools</h1>
+					<h1>Xeroc</h1>
 				</span>
 			{{/if}}
 

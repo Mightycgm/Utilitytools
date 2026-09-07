@@ -941,6 +941,19 @@ $header-height: crayon.size(14);
 	width: crayon.size(10);
 	height: crayon.size(10);
 	border: 2px solid oklch(37% 0.09 145deg);
+
+	&.dt-brand-x {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #420000;
+		color: #ffffff;
+		font-weight: 800;
+		font-size: 1.25rem;
+		line-height: 1;
+		border-color: #990000;
+		user-select: none;
+	}
 }
 
 .dt-brand-text {

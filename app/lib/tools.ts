@@ -929,7 +929,7 @@ export const toolCategories: ToolCategory[] = [
 		tools: [
 			{
 				id: 'ios-app',
-				name: 'delphitools for iOS',
+				name: 'Xeroc for iOS',
 				description:
 					'Built natively for iPhone and iPad. No accounts, no tracking, no compromises.',
 				icon: 'smartphone',
@@ -938,7 +938,7 @@ export const toolCategories: ToolCategory[] = [
 			},
 			{
 				id: 'cli',
-				name: 'delphitools CLI',
+				name: 'Xeroc CLI',
 				description:
 					'The same tools, in your shell. Entirely offline.',
 				icon: 'square-terminal',
@@ -949,7 +949,7 @@ export const toolCategories: ToolCategory[] = [
 	},
 	{
 		id: 'experiments',
-		name: "Alien Delphi's Experiments",
+		name: "Xeroc Experiments",
 		tools: [
 			{
 				id: 'stupid-units',
@@ -1007,7 +1007,7 @@ const workflowsEntry: Tool = {
 
 const experimentsEntry: Tool = {
 	id: 'experiments',
-	name: "Alien Delphi's Experiments",
+	name: 'Xeroc Experiments',
 	description: 'Unfinished tool sketches',
 	icon: 'flask-conical',
 	href: '/experiments',

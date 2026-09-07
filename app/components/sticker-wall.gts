@@ -64,7 +64,7 @@ function downloadSticker(file: string) {
 	const base = file.split('/').pop() ?? file;
 	const a = document.createElement('a');
 	a.href = `/stickers/${file}@2x.png`;
-	a.download = `delphitools-${base}-sticker.png`;
+	a.download = `xeroc-${base}-sticker.png`;
 	a.setAttribute('aria-hidden', 'true');
 	document.body.appendChild(a);
 	a.click();

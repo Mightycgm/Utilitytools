@@ -18,7 +18,7 @@ export default class ApplicationTemplate extends Component {
 	}
 
 	<template>
-		{{pageTitle "delphitools"}}
+		{{pageTitle "Xeroc"}}
 
 		{{#if this.isBare}}
 			{{outlet}}

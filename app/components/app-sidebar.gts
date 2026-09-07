@@ -112,17 +112,14 @@ export default class AppSidebar extends Component {
 		>
 			<div class="dt-sidebar-header">
 				<LinkTo @route="index" class="dt-brand">
-					<img
-						src="/delphi-lowlod.png"
-						width="64"
-						height="64"
-						alt=""
-						class="dt-brand-logo
+					<span
+						class="dt-brand-logo dt-brand-x
 							{{if
 								this.pride
 								'pride-ring'
 							}}"
-					/>
+						aria-hidden="true"
+					>X</span>
 					<span class="dt-brand-text">
 						<span
 							class="dt-brand-name
@@ -131,7 +128,7 @@ export default class AppSidebar extends Component {
 									'pride-wordmark'
 								}}"
 						>
-							delphitools
+							Xeroc
 						</span>
 						<span class="dt-brand-sub">
 							<span
@@ -376,12 +373,12 @@ export default class AppSidebar extends Component {
 							class="dt-about-icon"
 						/>
 						<span class="dt-sr-only">About
-							delphitools</span>
+							Xeroc</span>
 					</button>
 
 					<d.Content class="dt-dialog">
 						<header class="dt-dialog-head">
-							<h2>About delphitools</h2>
+							<h2>About Xeroc</h2>
 							<button
 								type="button"
 								class="dt-dialog-close"

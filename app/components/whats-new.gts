@@ -6,7 +6,7 @@ import { LinkTo } from '@ember/routing';
 import Dialog from 'delphitools-v2/components/ui/dialog';
 import Icon from 'delphitools-v2/components/icon';
 
-const PILL_TEXT = 'welcome to delphitools 2.0!';
+const PILL_TEXT = 'welcome to Xeroc 2.0!';
 
 const EMBER_URL = 'https://emberjs.com';
 const CRAYON_URL = 'https://github.com/TeriyakiBomb/crayon';
@@ -48,7 +48,7 @@ export default class WhatsNew extends Component {
 				{{PILL_TEXT}}
 			</button>
 			<d.Content class="dt-wn">
-				<h2 class="dt-sr-only">delphitools 2.0</h2>
+				<h2 class="dt-sr-only">Xeroc 2.0</h2>
 				<div class="dt-wn-slide">
 					{{#if (eq this.slide 0)}}
 						<img
@@ -61,7 +61,7 @@ export default class WhatsNew extends Component {
 						<p>
 							After half a year, I'd
 							like to welcome you to
-							delphitools 2.0, rebuilt
+							Xeroc 2.0, rebuilt
 							from the ground up using
 							<a
 								href={{EMBER_URL}}
@@ -131,7 +131,7 @@ export default class WhatsNew extends Component {
 							class="dt-wn-art"
 						/>
 						<p>
-							In addition, delphitools
+							In addition, Xeroc
 							now offers
 							<LinkTo
 								@route="workflows"

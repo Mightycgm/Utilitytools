@@ -29,6 +29,21 @@
 	border: 2px solid oklch(0.32 0.07 145);
 }
 
+.sub-topbar-home-x {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	inline-size: 22px;
+	block-size: 22px;
+	background: #420000;
+	color: #ffffff;
+	border: 2px solid #990000;
+	font-weight: 800;
+	font-size: 11px;
+	line-height: 1;
+	user-select: none;
+}
+
 .sub-topbar-wordmark {
 	margin-inline: 2px 6px;
 	font-size: 13px;

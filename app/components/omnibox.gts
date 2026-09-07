@@ -279,7 +279,7 @@ export default class Omnibox extends Component<OmniboxSignature> {
 				<ChangelogPopup />
 			</div>
 			<img src={{this.artSrc}} alt="" class="dt-hero-art" />
-			<h1 class="dt-sr-only">delphitools</h1>
+			<h1 class="dt-sr-only">Xeroc</h1>
 		</header>
 
 		<div class="dt-omni-zone">

@@ -1,5 +1,5 @@
 {
-	"name": "delphitools",
+	"name": "xeroc",
 	"compatibility_date": "2026-08-29",
 	// assets-only worker: prerendered per-route files win when build:static ran,
 	// the SPA fallback keeps direct tool links working when only `build` ran

@@ -48,7 +48,7 @@ const AboutDelphitoolsBody: TOC<{ Element: HTMLDivElement }> = <template>
 	<div class="dt-about-body" ...attributes>
 		<div class="dt-about-lede">
 			<p>
-				delphitools is a collection of small, focused
+				Xeroc is a collection of small, focused
 				utilities that respect your privacy and work
 				entirely in your browser. No data leaves your
 				machine, no accounts required, no tracking. Just
@@ -118,7 +118,7 @@ const AboutDelphitoolsBody: TOC<{ Element: HTMLDivElement }> = <template>
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Behind the scenes of delphitools<span
+					Behind the scenes of Xeroc<span
 						class="dt-sr-only"
 					>(opens in new tab)</span>
 				</a>
@@ -128,7 +128,7 @@ const AboutDelphitoolsBody: TOC<{ Element: HTMLDivElement }> = <template>
 		<div class="dt-about-block">
 			<h3>With thanks to</h3>
 			<p class="dt-about-note">
-				Folks who, instead of donating to delphitools,
+				Folks who, instead of donating to Xeroc,
 				gave to Wikipedia or the EFF on its behalf.
 			</p>
 			<div class="dt-chips">

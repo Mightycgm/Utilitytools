@@ -922,14 +922,10 @@ export default class TopBar extends Component {
 
 			<LinkTo
 				@route="index"
-				aria-label="back to delphitools"
+				aria-label="back to Xeroc"
 				class="sub-topbar-home"
 			>
-				<img
-					src="/delphi-lowlod.png"
-					alt=""
-					class="sub-topbar-home-img"
-				/>
+				<span class="sub-topbar-home-x" aria-hidden="true">X</span>
 			</LinkTo>
 			<span class="sub-topbar-wordmark">Substrata</span>
 			<span class="sub-topbar-divider"></span>
