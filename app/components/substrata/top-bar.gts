@@ -333,7 +333,7 @@ class SceneMenu extends Component<SceneMenuSignature> {
 					>
 						<span
 							class="sub-topbar-item-label"
-						>Back to delphitools</span>
+						>Back to Xeroc</span>
 					</LinkTo>
 				</div>
 			</Box>
@@ -709,7 +709,7 @@ const HelpMenu: TOC<HelpMenuSignature> = <template>
 			@onClick={{fn showHelpModal @onClose "about-substrata"}}
 		/>
 		<Item
-			@label="About delphitools"
+			@label="About Xeroc"
 			@onClick={{fn
 				showHelpModal
 				@onClose
@@ -718,7 +718,7 @@ const HelpMenu: TOC<HelpMenuSignature> = <template>
 		/>
 		{{! avoid nested buttons }}
 		<a
-			href="https://github.com/1612elphi/delphitools"
+			href="https://github.com/Mightycgm/Utilitytools"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="sub-topbar-item"
@@ -925,7 +925,11 @@ export default class TopBar extends Component {
 				aria-label="back to Xeroc"
 				class="sub-topbar-home"
 			>
-				<span class="sub-topbar-home-x" aria-hidden="true">X</span>
+				<img
+					src="/logo.png"
+					alt="Xeroc"
+					class="sub-topbar-home-img"
+				/>
 			</LinkTo>
 			<span class="sub-topbar-wordmark">Substrata</span>
 			<span class="sub-topbar-divider"></span>

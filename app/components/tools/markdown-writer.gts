@@ -11,7 +11,7 @@ import { downloadText } from 'delphitools-v2/lib/download';
 import { TEXT_ACCEPT, acceptAttr } from 'delphitools-v2/lib/tools';
 import filePaste, { matchesAccept } from 'delphitools-v2/modifiers/file-paste';
 
-const STORAGE_KEY = 'delphitools-scratchpad';
+const STORAGE_KEY = 'xeroc-scratchpad';
 const ACCEPT = acceptAttr(TEXT_ACCEPT);
 const SAVE_DEBOUNCE_MS = 1000;
 const COPIED_MS = 1500;

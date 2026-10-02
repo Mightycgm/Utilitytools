@@ -57,7 +57,7 @@ export default class SmallScreenNotice extends Component {
 					actively working on a mobile version,
 					please be patient.
 				</p>
-				<p class="sub-small-notice-sign">Love, delphi</p>
+				<p class="sub-small-notice-sign">Love, Xeroc</p>
 				<div class="sub-small-notice-bar">
 					<button
 						type="button"

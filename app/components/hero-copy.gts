@@ -84,7 +84,7 @@ export default class HeroCopy extends Component {
 							<br />
 							Fully
 							<a
-								href="https://github.com/1612elphi/delphitools"
+								href="https://github.com/Mightycgm/Utilitytools"
 							>open source</a>, 0-BSD
 							licensed for anyone.
 							<br />
@@ -130,7 +130,7 @@ export default class HeroCopy extends Component {
 						<p class="dt-hero-flip-more">
 							Plus
 							<a
-								href="https://github.com/1612elphi/delphitools"
+								href="https://github.com/Mightycgm/Utilitytools"
 								target="_blank"
 								rel="noopener noreferrer"
 							>many more open source

@@ -13,7 +13,7 @@ import { TrackedExternal } from 'delphitools-v2/lib/tracked-external';
 
 
 const BUG_MAILTO = 'mailto:tools@rmv.fyi?subject=substrata%20bug%20report';
-const REPO_URL = 'https://github.com/1612elphi/delphitools';
+const REPO_URL = 'https://github.com/Mightycgm/Utilitytools';
 
 class StorageButton extends Component {
 	enabled = new TrackedExternal(
@@ -99,7 +99,7 @@ export default class OnboardingModal extends Component {
 					/>
 					<p>
 						Hi, this is Substrata, the
-						delphitools image editor. It
+						Xeroc image editor. It
 						does effects, layers, filters,
 						film sims, cropping, text and
 						more.

@@ -34,7 +34,7 @@ export const RELEASES: Release[] = [
 		features: ['added new hero art'],
 		fixes: [
 			"Favicon Generator: Fixed an issue where the entire pack wouldn't download as one zip. Thanks, @TheTinkerersHaven on GitHub!",
-			'Picked Alien Delphi up from jail',
+			'Picked Alien up from jail',
 		],
 		technical: [],
 	},
@@ -42,7 +42,7 @@ export const RELEASES: Release[] = [
 		version: '2.0.0',
 		since: '1.0',
 		features: [
-			'Rebuilt from the ground up: delphitools is now rebuilt from scratch with Ember 7 and Crayon CSS as the new foundation. Every tool was rebuilt for the new stack!',
+			'Rebuilt from the ground up: Xeroc is now rebuilt from scratch with Ember 7 and Crayon CSS as the new foundation. Every tool was rebuilt for the new stack!',
 			'The Omnibox: The front page now has one box that answers your queries as you type! Drop a file on it to see what tools accept it, paste a colour code and it gives you conversions right there, decipher text, try conversions and more!',
 			"Workflows: Connect your favourite tools into a sequence that carries files between it! No more downloading and uploading when you're switching tools. Track your progress in the new flow bar!",
 			'Semantic Versioning and the Changelog: No more commit hashes! Real version numbers for real people. And a swanky changelog, which you are reading right now!',

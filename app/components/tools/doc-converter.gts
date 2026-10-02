@@ -47,7 +47,7 @@ import {
 	printHtmlInIframe,
 } from 'delphitools-v2/lib/pandoc/print-pdf';
 
-const SCRATCHPAD_KEY = 'delphitools-scratchpad';
+const SCRATCHPAD_KEY = 'xeroc-scratchpad';
 const PANDOC_VERSION = '3.9';
 const PANDOC_URL = `https://github.com/jgm/pandoc/tree/${PANDOC_VERSION}`;
 

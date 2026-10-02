@@ -24,6 +24,6 @@ export const DEFAULT_SETTINGS: EditorSettings = {
 // remove legacy storage
 export function clearStoredSettings(): void {
 	try {
-		localStorage.removeItem('delphitools-editor-settings');
+		localStorage.removeItem('xeroc-editor-settings');
 	} catch {}
 }

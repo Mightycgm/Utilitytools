@@ -24,14 +24,14 @@ const WALL_STICKERS: Sticker[] = [
 	},
 	{
 		file: 'trans',
-		label: "I had my files' gender transed at delphi.tools",
+		label: "I had my files' gender transed at xeroc.tools",
 		rot: -7,
 		width: 'clamp(96px, 22vw, 132px)',
 		align: 'flex-start',
 	},
 	{
 		file: 'marker',
-		label: 'delphi, sketched',
+		label: 'xeroc, sketched',
 		rot: 6,
 		width: 'clamp(120px, 30vw, 158px)',
 		align: 'flex-end',

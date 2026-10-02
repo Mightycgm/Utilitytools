@@ -112,14 +112,15 @@ export default class AppSidebar extends Component {
 		>
 			<div class="dt-sidebar-header">
 				<LinkTo @route="index" class="dt-brand">
-					<span
-						class="dt-brand-logo dt-brand-x
+					<img
+						src="/logo.png"
+						alt="Xeroc"
+						class="dt-brand-logo
 							{{if
 								this.pride
 								'pride-ring'
 							}}"
-						aria-hidden="true"
-					>X</span>
+					/>
 					<span class="dt-brand-text">
 						<span
 							class="dt-brand-name

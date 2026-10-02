@@ -24,24 +24,9 @@
 }
 
 .sub-topbar-home-img {
-	inline-size: 22px;
-	block-size: 22px;
-	border: 2px solid oklch(0.32 0.07 145);
-}
-
-.sub-topbar-home-x {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	inline-size: 22px;
-	block-size: 22px;
-	background: #420000;
-	color: #ffffff;
-	border: 2px solid #990000;
-	font-weight: 800;
-	font-size: 11px;
-	line-height: 1;
-	user-select: none;
+	inline-size: 24px;
+	block-size: 24px;
+	object-fit: contain;
 }
 
 .sub-topbar-wordmark {

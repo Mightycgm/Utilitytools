@@ -52,7 +52,7 @@ export default class WhatsNew extends Component {
 				<div class="dt-wn-slide">
 					{{#if (eq this.slide 0)}}
 						<img
-							src="/art/delphi-house.webp"
+							src="/art/wn-home.webp"
 							width="640"
 							height="639"
 							alt=""

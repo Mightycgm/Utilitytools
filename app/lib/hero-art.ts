@@ -7,11 +7,6 @@ export interface HeroArt {
 
 export const HERO_ART: HeroArt[] = [
 	{
-		src: '/heroes/delphi.webp',
-		artist: 'delphi',
-		url: 'https://rmv.fyi/',
-	},
-	{
 		src: '/heroes/Valkyrie.webp',
 		artist: 'Valkyrie',
 		url: 'https://theslightlychippedmoon.com/',
@@ -60,6 +55,6 @@ export const HERO_ART: HeroArt[] = [
 	{
 		src: '/heroes/artandmagic.webp',
 		artist: 'Art&Magic',
-		url: 'https://artandmagic.carrd.co/?utm_source=delphitools',
+		url: 'https://artandmagic.carrd.co/',
 	},
 ];

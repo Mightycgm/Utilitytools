@@ -99,6 +99,11 @@ export default class AppHeader extends Component {
 				</span>
 			{{else}}
 				<span class="dt-header-title">
+					<img
+						src="/logo.png"
+						alt="Xeroc"
+						class="dt-header-icon"
+					/>
 					<h1>Xeroc</h1>
 				</span>
 			{{/if}}

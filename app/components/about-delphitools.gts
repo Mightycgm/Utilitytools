@@ -1,5 +1,4 @@
 import type { TOC } from '@ember/component/template-only';
-import CastLineup from 'delphitools-v2/components/cast-lineup';
 import ColourPaletteDialog from 'delphitools-v2/components/colour-palette-dialog';
 
 const CONTRIBUTORS = [
@@ -62,34 +61,22 @@ const AboutDelphitoolsBody: TOC<{ Element: HTMLDivElement }> = <template>
 			</p>
 		</div>
 
-		<div class="dt-about-block">
-			<CastLineup />
-		</div>
-
 		<div class="dt-about-cols">
 			<div>
-				<h3>Made by</h3>
+				<h3>Project</h3>
 				<p>
-					<a
-						href="https://rmv.fyi"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						delphi<span
-							class="dt-sr-only"
-						>(opens in new tab)</span>
-					</a>
+					Xeroc
 				</p>
 			</div>
 			<div>
 				<h3>Source</h3>
 				<p>
 					<a
-						href="https://github.com/1612elphi/delphitools"
+						href="https://github.com/Mightycgm/Utilitytools"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						1612elphi/delphitools<span
+						Mightycgm/Utilitytools<span
 							class="dt-sr-only"
 						>(opens in new tab)</span>
 					</a>
@@ -171,7 +158,7 @@ const AboutDelphitoolsBody: TOC<{ Element: HTMLDivElement }> = <template>
 			<p class="dt-about-note">
 				Plus
 				<a
-					href="https://github.com/1612elphi/delphitools"
+					href="https://github.com/Mightycgm/Utilitytools"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

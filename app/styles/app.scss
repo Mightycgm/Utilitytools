@@ -940,20 +940,7 @@ $header-height: crayon.size(14);
 	flex-shrink: 0;
 	width: crayon.size(10);
 	height: crayon.size(10);
-	border: 2px solid oklch(37% 0.09 145deg);
-
-	&.dt-brand-x {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #420000;
-		color: #ffffff;
-		font-weight: 800;
-		font-size: 1.25rem;
-		line-height: 1;
-		border-color: #990000;
-		user-select: none;
-	}
+	object-fit: contain;
 }
 
 .dt-brand-text {
@@ -1253,10 +1240,10 @@ $header-height: crayon.size(14);
 }
 
 .dt-header-icon {
-	width: crayon.size(5);
-	height: crayon.size(5);
+	width: crayon.size(6);
+	height: crayon.size(6);
 	flex-shrink: 0;
-	color: var(--muted-foreground);
+	object-fit: contain;
 }
 
 .dt-header-actions {

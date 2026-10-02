@@ -29,7 +29,7 @@ import type Owner from '@ember/owner';
 
 type EditorCore = typeof import('delphitools-v2/lib/editor/core');
 
-const DOC_KEY = 'delphitools-editor';
+const DOC_KEY = 'xeroc-editor';
 const ACCEPT = acceptAttr(TEXT_ACCEPT);
 const SEED = '';
 const PLACEHOLDER =
