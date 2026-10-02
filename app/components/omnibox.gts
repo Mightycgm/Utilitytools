@@ -3,7 +3,6 @@ import { tracked } from '@glimmer/tracking';
 import { on } from '@ember/modifier';
 import { service } from '@ember/service';
 import type RouterService from '@ember/routing/router-service';
-import type ThemeService from 'delphitools-v2/services/theme';
 import { htmlSafe } from '@ember/template';
 import type { SafeString } from '@ember/template';
 import { LinkTo } from '@ember/routing';
@@ -23,8 +22,6 @@ import {
 	toolsForFile,
 	type OmniReading,
 } from 'delphitools-v2/lib/omni';
-import { HERO_ART } from 'delphitools-v2/lib/hero-art';
-import WhatsNew from 'delphitools-v2/components/whats-new';
 import ChangelogPopup from 'delphitools-v2/components/changelog-popup';
 
 const PLACEHOLDER = 'Drop a file, search for a tool, paste in text';
@@ -53,7 +50,6 @@ function formatBytes(bytes: number): string {
 
 export default class Omnibox extends Component<OmniboxSignature> {
 	@service declare router: RouterService;
-	@service declare theme: ThemeService;
 
 	#picker: HTMLInputElement | null = null;
 
@@ -61,7 +57,6 @@ export default class Omnibox extends Component<OmniboxSignature> {
 	@tracked reading: OmniReading | null = null;
 	@tracked file: File | null = null;
 	@tracked fileTools: Tool[] = [];
-	@tracked artIndex = Math.floor(Math.random() * HERO_ART.length);
 
 	#readTimer?: ReturnType<typeof setTimeout>;
 	#readToken = 0;
@@ -70,30 +65,6 @@ export default class Omnibox extends Component<OmniboxSignature> {
 		super.willDestroy();
 		clearTimeout(this.#readTimer);
 	}
-
-	get art() {
-		return HERO_ART[this.artIndex] ?? HERO_ART[0]!;
-	}
-
-	get artSrc() {
-		const art = this.art;
-		return this.theme.dark && art.srcDark ? art.srcDark : art.src;
-	}
-
-	get canShuffle() {
-		return HERO_ART.length > 1;
-	}
-
-	get showArtBar() {
-		return this.canShuffle || !!this.art.artist;
-	}
-
-	shuffle = () => {
-		if (!this.canShuffle) return;
-		let next = Math.floor(Math.random() * (HERO_ART.length - 1));
-		if (next >= this.artIndex) next++;
-		this.artIndex = next;
-	};
 
 	get isIdle() {
 		return !this.raw.trim() && !this.file;
@@ -275,11 +246,12 @@ export default class Omnibox extends Component<OmniboxSignature> {
 	<template>
 		<header class="dt-hero is-doodle">
 			<div class="dt-hero-pills">
-				<WhatsNew />
 				<ChangelogPopup />
 			</div>
-			<img src={{this.artSrc}} alt="" class="dt-hero-art" />
-			<h1 class="dt-sr-only">Xeroc</h1>
+			<div class="dt-hero-brand">
+				<img src="/logo.png" alt="Xeroc" class="dt-hero-logo" />
+				<h1 class="dt-hero-title">Xeroc</h1>
+			</div>
 		</header>
 
 		<div class="dt-omni-zone">
@@ -438,42 +410,6 @@ export default class Omnibox extends Component<OmniboxSignature> {
 							</LinkTo>
 						</div>
 					{{/each}}
-				</div>
-			{{/if}}
-
-			{{#if this.showArtBar}}
-				<div class="dt-omni-artbar">
-					{{#if this.art.artist}}
-						{{#if this.art.url}}
-							<a
-								href={{this.art.url}}
-								target="_blank"
-								rel="noopener noreferrer"
-								class="dt-omni-artist"
-							>art by
-								{{this.art.artist}}</a>
-						{{else}}
-							<span
-								class="dt-omni-artist"
-							>art by
-								{{this.art.artist}}</span>
-						{{/if}}
-					{{else}}
-						<span></span>
-					{{/if}}
-					{{#if this.canShuffle}}
-						<button
-							type="button"
-							class="dt-omni-shuffle"
-							{{on
-								"click"
-								this.shuffle
-							}}
-						>
-							<Icon @name="shuffle" />
-							shuffle
-						</button>
-					{{/if}}
 				</div>
 			{{/if}}
 

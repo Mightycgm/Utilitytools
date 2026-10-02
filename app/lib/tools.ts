@@ -924,30 +924,6 @@ export const toolCategories: ToolCategory[] = [
 		],
 	},
 	{
-		id: 'elsewhere',
-		name: 'Elsewhere',
-		tools: [
-			{
-				id: 'ios-app',
-				name: 'Xeroc for iOS',
-				description:
-					'Built natively for iPhone and iPad. No accounts, no tracking, no compromises.',
-				icon: 'smartphone',
-				href: 'https://apps.apple.com/us/app/delphitools/id6761313703',
-				external: true,
-			},
-			{
-				id: 'cli',
-				name: 'Xeroc CLI',
-				description:
-					'The same tools, in your shell. Entirely offline.',
-				icon: 'square-terminal',
-				href: 'https://github.com/1612elphi/delphitools-cli',
-				external: true,
-			},
-		],
-	},
-	{
 		id: 'experiments',
 		name: "Xeroc Experiments",
 		tools: [

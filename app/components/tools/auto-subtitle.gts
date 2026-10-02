@@ -758,14 +758,6 @@ export default class AutoSubtitleTool extends Component {
 				aria-label="Experimental mode"
 			>
 				<div class="dt-asub-warn-body">
-					<img
-						class="dt-asub-warn-art"
-						src="/art/760mb.webp"
-						width="960"
-						height="435"
-						alt=""
-					/>
-					{{! wording by Ruby }}
 					<p class="dt-asub-warn-text">This will
 						download 760 MB of engine files
 						to work, and needs a pretty

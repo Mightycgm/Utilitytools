@@ -2407,32 +2407,18 @@ $header-height: crayon.size(14);
 	}
 }
 
-// 50%/100% anchors origin tile
 .dt-404-page {
-	// at most 4 tiles wide
-	--tile: 25vw;
-
 	position: fixed;
 	inset: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: crayon.size(6);
-	background: url("/tiles/regular-tile.png") center bottom / var(--tile)
-		var(--tile) repeat;
+	background: var(--background);
 }
 
 .dt-404-bottom-tile {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: var(--tile);
-	height: var(--tile);
-
-	// opaque; hides grid behind art
-	background: var(--background);
-	translate: -50% 0;
-	pointer-events: none;
+	display: none;
 }
 
 .dt-404-hero {
@@ -2764,12 +2750,27 @@ $header-height: crayon.size(14);
 	}
 }
 
-.dt-hero-art {
-	width: 100%;
-	max-width: 42rem;
-	// source art 2.8:1; delphi.webp 2.84:1
-	aspect-ratio: 2.8 / 1;
-	object-fit: fill;
+.dt-hero-brand {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: crayon.size(3);
+	margin-block: crayon.size(4);
+}
+
+.dt-hero-logo {
+	width: 104px;
+	height: 104px;
+	object-fit: contain;
+	filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.25));
+}
+
+.dt-hero-title {
+	font-size: crayon.font-size("4xl");
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	color: var(--foreground);
+	margin: 0;
 }
 
 .dt-hero-flip {
@@ -3009,17 +3010,6 @@ $header-height: crayon.size(14);
 	}
 }
 
-.dt-grid.is-featured .dt-cell[href="/experiments"]::after {
-	content: "";
-	position: absolute;
-	right: crayon.size(3);
-	bottom: crayon.size(3);
-	width: crayon.size(12);
-	height: crayon.size(12);
-	background: url("/art/alien-badge.webp") center / contain no-repeat;
-	rotate: -8deg;
-	pointer-events: none;
-}
 
 .dt-cell-icon {
 	display: block;
@@ -3197,18 +3187,7 @@ $header-height: crayon.size(14);
 }
 
 .dt-badge.is-experiment {
-	padding-inline-start: crayon.size(1);
-
-	&::before {
-		content: "";
-		display: inline-block;
-		width: 1em;
-		height: 1em;
-		margin-inline-end: crayon.size(1);
-		vertical-align: -0.15em;
-		background: url("/art/alien-badge.webp") center / contain
-			no-repeat;
-	}
+	padding-inline: crayon.size(2);
 }
 
 .dt-tool-desc {

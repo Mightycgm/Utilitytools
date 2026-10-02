@@ -10,14 +10,7 @@
 }
 
 .sub-canvas-wordmark {
-	pointer-events: none;
-	position: absolute;
-	inset: 0;
-	background-color: var(--foreground);
-	opacity: 0.035;
-	mask-image: url("/substrata/wordmark-tile.svg");
-	mask-repeat: repeat;
-	mask-size: 220px auto;
+	display: none;
 }
 
 .sub-canvas-drop-hint {

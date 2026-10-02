@@ -14,43 +14,7 @@ interface Sticker {
 	align: 'flex-start' | 'center' | 'flex-end';
 }
 
-const WALL_STICKERS: Sticker[] = [
-	{
-		file: 'chant',
-		label: 'no login, no fee, these tools stay free',
-		rot: 4,
-		width: 'clamp(180px, 42vw, 260px)',
-		align: 'center',
-	},
-	{
-		file: 'trans',
-		label: "I had my files' gender transed at xeroc.tools",
-		rot: -7,
-		width: 'clamp(96px, 22vw, 132px)',
-		align: 'flex-start',
-	},
-	{
-		file: 'marker',
-		label: 'xeroc, sketched',
-		rot: 6,
-		width: 'clamp(120px, 30vw, 158px)',
-		align: 'flex-end',
-	},
-	{
-		file: 'policy',
-		label: 'privacy policy: no data collected',
-		rot: -4,
-		width: 'clamp(170px, 40vw, 240px)',
-		align: 'flex-start',
-	},
-	{
-		file: 'saas-h8r',
-		label: 'certified SaaS h8r',
-		rot: 5,
-		width: 'clamp(120px, 30vw, 158px)',
-		align: 'flex-end',
-	},
-];
+const WALL_STICKERS: Sticker[] = [];
 
 const LOUSY_STICKER: Sticker = {
 	file: '',

@@ -15,13 +15,7 @@ export default RouteTemplate(
 				<header class="dt-tool-header is-capped">
 					<div class="dt-tool-heading">
 						<h1 class="dt-exp-title">
-							<img
-								src="/art/experiments.webp"
-								width="2000"
-								height="920"
-								alt={{experimentsCategory.name}}
-								class="dt-exp-art"
-							/>
+							{{experimentsCategory.name}}
 						</h1>
 						<p
 							class="dt-tool-desc"
